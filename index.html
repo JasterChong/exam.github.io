@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CYCUTKD</title>
+		<!------main css------>
+		<link rel="stylesheet" type="text/css" href="css/ts2.css">
+		<!------google fonts字體------>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+		<!---get bootstrap HTML、CSS及JS等的內容的框架--->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!------一些facebook，youtube，按鈕等等的圖示------>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		
+		<!---------header-------->
+		<section id="header">
+			<nav class="navbar navbar-light">
+				<a class="logo" href="#"><img src="imga/logo789.png"></a>
+				<button class="nav-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<!---icons一些圖案去這裡找https://fontawesome.com/v4.7.0/icons/--->
+				<i class="fa fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#" target="_blank">首頁</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="main.html" target="_blank">幹部介紹</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="ex.html" target="_blank">組員介紹</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" target="_blank">影片介紹</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+		<!-----打算在這裡打歡迎加入我們----->
+		<Section id="welcome">
+			<div class="container"> <!---一個小內容格子(容器的寬度)--->
+			<div class="welcome text-center"> <!---打文字地方,文字在中間--->
+			<h1>中原大學跆拳道社</h1>
+			<p>我們是一群熱愛跆拳道的熱血青年.....
+				不管你有沒有練過,在這社團沒有分你我....<br>
+				如果你有夢想，想運動，想鍛煉身體，想要女朋友,想成為高手，想展現自我跆拳道是您最好的選擇!!!<br>
+			心动不如行动，行动成就梦想！歡迎加入我們的大家庭。</p>
+			<!---下面是申請按鈕--->
+			<button type="submit" class="btn btn-light" title="快速申請" >立即加入</button><!---submit送出表單，class Bootstrap框架的功能的打法如果忘記了再去google--->
+		</div>
+	</div>
+</Section>
+
+<!---活動照片內容--->
+<section id="activity">
+	<div class="container" >
+		<div clss="row">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner">
+					<h1>活動照片</h1>
+					<div class="carousel-item active">
+					<img src="imga/p1.jpg" class="d-block w-50" >
+					</div>
+					<div class="carousel-item">
+					<img src="imga/p2.jpg" class="d-block w-50" >
+					</div>
+					<div class="carousel-item">
+					<img src="imga/p3.jpg" class="d-block w-50" >
+					</div>
+					<div class="carousel-item">
+					<img src="imga/p6.jpg" class="d-block w-50" >
+					</div>
+					<div class="carousel-item">
+					<img src="imga/p7.jpg" class="d-block w-50" >
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
+		</div>
+		</div>
+	</div>
+</section>
+
+<!---跆拳道來源--->
+<Section id="about">
+	<div class="container">
+		<div class="row"> <!---屬性的功能是用來合併多個列--->
+			<div class="col-md-6 text-center"> 
+				<!---col-md-6忘記了可以去這裡https://medium.com/@realdennis/40行實作響應式的佈局系統-告訴你col-sm-12-col-md-6-是如何實現-4490a65b1a0--->
+				<img src="imga/p8.png" class="img1" width="400px">
+				
+			</div>
+			<div class="col-md-6 text-justify">
+				<h3>跆拳道的起源&關於跆拳道</h3>
+				<p>遠古時代的人們，不管生活在何處，為了獲得食物和抗擊外族侵略及野獸襲擊，都不得不發展自身的技術以求生存。朝鮮的武術正是在這種生存需要中萌芽產生的。經過漫長的歲月，人們本能的自衛活動逐漸演化為有意識的技擊活動，進而產生了朝鮮最早的技擊形式----跆跟(跆拳道的古稱)。</p>
+				<p>跆拳道是東亞地區，特別是朝鮮半島古老的民間技擊術，是一項運用手腳技術進行搏擊格鬥的韓國民族傳統的體育專案。它由品勢（拳套）、搏擊、功力檢驗三部分內容組成。跆拳道在引進與吸收中國的傳統武術及日本空手道的基礎上，創新與發展起來的一門獨特武術，具有較高的防身自衛及強壯體魄的實用價值。它通過競賽、品勢和功力檢測等運動形式，使練習者增強體質，掌握技術，並培養堅韌不拔的意志品質。跆拳道，是一項運用手腳技術進行搏擊格鬥的朝鮮民族傳統的體育項目。它由型、對練、功力三部份內容組成。跆拳道表達了人類的生存意識，同時，將精神上的追求化為具體的體育活動。</p><!---參考內容https://sites.google.com/site/wl02873450/home/a02--->
+			</div>
+			<div class="col-md-6 text-justify">
+				<h3>多樣化</h3>
+				<p>跆拳道不在只是一個用手腳技術進行搏擊格鬥了，現在還是可以加入舞蹈的運動。跆拳舞是跆拳道舞蹈的簡稱，是跆拳道表演內容之一，是由跆拳道中的基本腿法、手法、步法等按照一定規律編排組合而成，在音樂伴奏下的一種具有很強表演能力和健身價值的舞蹈。
+				</p>
+				<p>跆拳舞雖然以舞蹈形式對學員進行訓練，但是一招一式都是從跆拳道品勢動作中借鑑而來，取其精華去其糟粕，在練習中不自覺地鞏固了學員的步法腿法、手刀沖拳動作，對學員的身體柔韌性、爆發力都有明顯的提升。在強身健體的同時掌握了一定的進攻與防守能力，具有健身和防身的功效。
+				</p>			
+				<!---原文網址：https://kknews.cc/sports/l8n5xpz.html--->
+			</div>
+			<div class="col-md-6">
+				<!---網頁中嵌入影片忘記了參考https://www.eztrust.com.tw/html/webdesign/show.aspx?num=30&category=B&kind=9--->
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/53k-SIIT7VQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen ></iframe>									
+				</div>
+			</div>
+		</div>
+	</div>
+</Section>
+
+<!---activity訓練時間，獎牌，以及近期活動--->
+<section id="activitytime">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-4">
+				<img src="imga/time.png">
+				<h4>社團訓練時間</h4>	
+				<p>每周一、二、四<br>
+				   晚上:19:00-21:30<br>
+				   地點:體育館2F (跆拳道教室)</p>			
+			</div>
+
+			<div class="col-md-4">
+				<img src="imga/17.png">
+				<h4>近期活動</h4>	
+				<p>嗨，各位小粉絲們！一年一度的社博即將來臨～<br>
+					準備好跟我們一起炸翻全場了嗎？<br>
+					那就來"1"號攤位跟我們一起狂歡哦！<br>
+				   	還有還有在當天社團博覽我們會有表演哦！<br>
+					即將在108/9/3 (周二) 晚上18:20-18:35，在中原大學校園，鐘塔草坪上表演，屆時歡迎有興趣的人一起給我們鼓勵。</p>			
+			</div>
+
+			<div class="col-md-4 ">
+				<img src="imga/16.png">
+				<h4>近期得獎</h4>	
+				<p>2019/8/15<br>
+				   恭喜🎉🎉🎉中原企管系羅玉町在今年的台海公開賽事，為我們中原大學爭取2金榮耀。<br>
+				</p>			
+			</div>
+
+		</div>		
+	</div>
+	
+</section>
+
+<!---訓練特征feature--->
+<Section id="feature">
+	<div class="container">
+		<div class="row"> <!---屬性的功能是用來合併多個列--->
+			<div class="col-md-6">
+				<img src="imga/p9.png" class="img-fluid">
+			</div>
+			<div class="col-md-6">
+				<div class="feature-box">
+					<div class="feature-left">
+						<div class="a">
+							<i class="fa fa-heartbeat"></i>
+						</div>
+					</div>
+					<div class="text1">
+						<div class="feature-right">
+							<h4>順暢肺活動</h4>
+							<p>1. 擴張血管，減少血流阻力，降低心臟擴張器的血壓。
+
+								2. 增加供血，尤其能增加紅細胞和血色素。
+								3. 供給更多氧氣，使身體組織更加健康。
+
+								4. 增強心臟，能夠抵抗任何衝擊。
+
+								5. 使睡眠安穩，易於排除排泄物。
+
+								6. 跆拳道不僅使瘦的人增加肌肉，相反，還是肥胖的人減少脂 肪，使體重恢復正常。跆拳道不同於一般體育活動，做激烈的活動使每小時消耗的卡路里量為600，減少體重一磅要消耗3500卡路里，因此，一天練一個小時的話一個星期就能減少一磅。
+
+								</p><!---原文網址：https://kknews.cc/health/z6xqx5l.html--->
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-box">
+					<div class="feature-left">
+						<div class="b">
+							<i class="fa fa-shield"></i>
+						</div>
+					</div>
+					<div class="text2">
+						<div class="feature-right">
+							<h4>增加保護自己的能力</h4>
+							<p>1. 有利於發達有力的肌肉。
+
+								2. 培養在一定空間使身體迅速的從一個地點移到另一個地點的活動能力。
+
+								3. 使關節、肌肉及筋更加柔韌有節奏性。
+
+								4. 發達末梢神經和視覺。
+
+								5. 學會移動身體的方法和技術。
+								</p><!---原文網址：https://kknews.cc/health/z6xqx5l.html--->
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-box">
+					<div class="feature-left">
+						<div class="c">							
+							<i class="fa fa-heart"></i>
+						</div>
+					</div>
+					<div class="text3">
+						<div class="feature-right">
+							<h4>育心</h4>
+							<p>跆拳道在平時的訓練過程中，通過做變換方向的動作來明確方位，從而提高了我們對事物的反應速度；長期的跆拳道學習中，讓我們主動想辦法克服困難，這鍛鍊了意志，培養了勇敢精神，學會了對人、事、物的正確態度。
+							</p><!---原文網址：https://kknews.cc/sports/rq4elkn.html--->
+						</div>
+					</div>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+</Section>
+
+<!---組員感想Impression，本來想做一個訓練過後的感想可惜沒有訓練過只好做一個組員感想--->
+
+<section id="impression">
+	<div class="container">
+		<h1 class="text-center">小組成員&感想</h1>
+		<p class="text-center">在電腦面前度過了多少個早晨</span></p>
+		<div class="row">
+			<div class="col-md-4">
+				<p class="comment">在這一次的網頁設計中我學習了許多,也查了許多html,css的資料,讓我體驗了做一個網頁其實不簡單,一遍想一遍打程式不知不覺的就到了早上~<br>
+
+					<a class="fa fa-instagram" href="https://www.instagram.com/zhengzhe_0722/" target="_blank"><span>zhengzhe_0722</span></a>
+
+				</p>
+				<img src="imga/p11.jpg">
+			</div>
+
+			<div class="col-md-4 middle">
+				<p class="comment">透過這次的期中作業,為了做出好的網頁,在網路上尋找喜歡的網頁做參考,在大家看到這麼完美的網頁,背後都是網頁設計師辛苦寫來的,網頁真的不簡單。<br>
+					<a class="fa fa-instagram" href="https://www.instagram.com/cheng_880122/" target="_blank"><span>cheng_880122</span></a>
+
+				</p>
+				<img src="imga/p12.jpg">
+			</div>
+
+			<div class="col-md-4">
+				<p class="comment">這次的網頁設計讓我學到很多的東西，也通過在其他的網頁學習到不同的HTML ，CSS以及JS等等，讓我成功的自己寫出多個網頁。<br>
+
+					<a class="fa fa-instagram" href="https://www.instagram.com/jaster_31/" target="_blank"><span>jaster_31</span></a>
+
+				</p>
+				<img src="imga/jaster.jpg">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!---Welcome to ask,歡迎來詢問--->
+<Section id="ask">
+	<div class="container">
+		<div class="ask text-center">
+			<h3>歡迎來詢問!</h3>
+			<p>對跆拳道社有興趣的，不明白的地方歡迎來問我們哦~~</p>
+
+			<form action="mailto:zhengzheczz@gmail.com" method="post" enctype="text/plain" >
+			
+    			<input type="email" class="form-control" placeholder="Email Id"><br>	
+
+    			<textarea class="form-control" name="Content" rows="3" placeholder="問題"></textarea><br>
+
+ 				<button type="submit" value="發送">發送</button>
+
+		   </form>
+		 </div>
+	</div>
+
+
+</Section>
+
+
+
+
+</body>
+</html>
