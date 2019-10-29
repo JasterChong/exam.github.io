@@ -1,0 +1,442 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+#header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imga/p.jpg");
+	height: 80vh;
+	background-size: cover; /* 保持图像本身的宽高比例，将图片缩放到正好完全覆盖定义背景的区域 */
+	background-position: center; /* 位子在中間 */
+}
+
+.navbar-nav li a
+{
+	float: right;
+	color: white !important; /* 優先級判斷 */
+	font-family: 'Noto Sans TC', sans-serif;
+}
+}
+
+.logo img
+{
+	width: 140px;  /* 寬度 */
+	margin-left: 50px; /* 左邊距 */
+}
+
+.nav-button
+{
+	background: none!important; /* 不顯示背景 */
+	border: none!important; /* 不显示边框，優先級判斷 */
+	outline: none!important; /* 无线条，優先級判斷 */
+
+}
+
+nav .fa-bars/* 設置按鈕顏色，以及大小 */
+{
+	color: white;
+	font-size: 30px;
+
+}
+
+ /* -----welcome text----- */
+.welcome 
+{
+	border-radius: 10px 100px / 120px;/* 外边框圆角 */
+	padding: 50px 100px;
+	margin-top: -150px;
+	background-color: #fff;
+	box-shadow: 0 0 30px 8px rgba(0,0,0,0.5); 
+
+}
+
+.welcome h1
+{
+	color: #696969;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: bold;
+}
+}
+
+.welcome p
+{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.welcome .btn-light
+{
+	margin-top: 9px;
+	padding: 12px 30px;
+	border-radius: 10px 100px / 120px;/* 外边框圆角 */
+	color: white;
+	background-color: #014991;
+	font-family: 'ZCOOL KuaiLe', sans-serif;
+}
+
+
+ /* -----activity 活動照片內容----- */
+#activity
+{
+	padding-bottom: 50px;
+	padding-top: 25px;
+}
+#activity .container
+{
+	padding: 30px 100px;
+	background-color: gray;
+	border-radius: 10% 30% 80% 70%;
+	box-shadow: 0 0 50px 8px rgba(0,0,0,0.5); 
+}
+
+
+.carousel-inner
+{
+	background: none;
+	/*background-image: url('imga/p6.png'); /* 向量 png from pngtree.com  測試用*/
+	padding: 0px 50px;
+
+}
+.carousel-inner h1{
+	color: white;
+	font-family: 'Ma Shan Zheng', sans-serif;
+	text-align: right; /* text-align：center、left、right */
+
+}
+
+.carousel .carousel-item {
+
+ 	height: 300px;
+}
+
+.carousel .carousel-item img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-top:20px auto;
+    margin-left:65px;
+ }   
+
+
+/*.carousel-inner img
+{
+
+	max-width:600px;
+	height: 300px;
+	overflow:hidden;
+
+
+}測試用 */
+
+
+/* ------關於跆拳道------- */
+#about
+{
+	padding-bottom: 100px;
+	padding-top: 0px;
+}
+
+#about .col-md-6
+{
+	padding: 20px 10px;
+
+}
+
+#about h3
+{
+	margin: 20px auto;
+	font-weight: bold;
+}
+
+/* activity訓練時間，獎牌，以及近期活動 */
+#activitytime
+{
+	background-color: #C0C0C0;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#activitytime .col-md-4
+{
+	padding: 20px;
+
+}
+
+#activitytime .col-md-4 img
+{
+	width: 15%;
+
+}
+
+#activitytime .col-md-4 h4
+{
+	padding: 5px;
+	font-weight: bold;
+
+}
+
+#activitytime .col-md-4 p
+{
+	padding: 5px;
+	text-align: justify;
+	/* 值 justify 可以使文本的两端都对齐。在两端对齐文本中，
+	文本行的左右两端都放在父元素的内边界上。然后，调整单词和字母间的间隔，
+	使各行的长度恰好相等。 */
+}
+
+
+
+
+
+/* -------特征------ */
+#feature
+{
+	padding-top: 100px ;
+	padding-bottom: 120px ;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../imga/p10.jpg");
+	background-size: cover; 
+	/* background-size的cover特定值会保持图像本身的宽高比例，
+	将图片缩放到正好完全覆盖定义背景的区域 */
+	background-position: center;
+	background-attachment: fixed; 
+	/*background-attachment是背景固定模式的屬性，而不同的固定方式就能夠有不同的視覺效果，
+	而人類的視覺是很容易欺騙的，適當的利用可以有意想不到的效果,fixed模式，不管外面、
+	裡面怎麼滾，他都是不會動的。*/
+	color: #fff;
+}
+
+#feature .col-md-6
+{
+	padding: 20px;
+}
+
+.feature-box
+{
+	height: 120px;
+}
+
+.feature-box .feature-left
+{
+	height: 120px;
+	width: 20%;
+	float: left;
+}
+
+.feature-box .feature-left .a .fa
+{
+	padding-top: 0px;
+	font-size: 50px;
+}
+
+.feature-box .feature-left .b .fa
+{
+	padding-top: 110px;
+	font-size: 50px;
+}
+
+.feature-box .feature-left .c .fa
+{
+	padding-top: 140px;
+	font-size: 50px;
+}
+
+.feature-box .feature-right
+{
+	height: 120px;
+	width: 80%;
+	float: left;
+}
+
+.feature-box .feature-right p
+{
+	font-size: small;
+}
+.feature-box .text1 .feature-right h4
+{
+	padding-top: 0px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.feature-box .text2 .feature-right h4
+{
+	padding-top: 100px;
+	padding-left: 30px;
+	text-align: left;
+}
+.feature-box .text3 .feature-right h4
+{
+	padding-top: 120px;
+	padding-left: 30px;
+	text-align: left;
+}
+.feature-box .feature-right p
+{
+
+	padding-left: 15px;
+	text-align: left;
+}
+
+/* ------組員感想Impression------ */
+
+#impression
+{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#impression h1
+{
+	margin-bottom: 20px;
+	font-style: oblique;
+	font-weight: bold;
+	color: #013f7e;
+}
+
+#impression p
+{
+	padding-bottom: 20px;
+}
+
+#impression .col-md-4
+{
+	padding: 10px 30px;
+
+}
+
+#impression img
+{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-left: -30px;
+	margin-top: -40px;
+	margin-bottom: 30px;
+	border: 5px solid #fff;
+}
+
+.comment
+{
+	font-size: 16px;
+	padding: 10px 10px 10px 30px; /* 上邊界值 右邊界值 下邊界值 左邊界值---> */
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2); /* 陰影部分 */
+	border-radius: 20px;
+}
+
+.comment .fa-instagram
+{
+	color: #013f7e;
+	font-size: 18px;
+	text-decoration:none; /* 隱藏超連結底線 */
+}
+
+#impression span
+{
+	color: #013f7e;
+	padding: 0px 0px 0px 10px; 
+	font-weight: 550;
+	font-size: 18px;
+}
+
+#impression .middle
+{
+	margin-top: -30px;
+	margin-bottom: -30px;
+}
+
+/* -----Welcome to ask,歡迎來詢問---- */
+.ask
+{
+	padding: 50px 20px;
+	background-color: gray;
+	box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+	position: relative; /* 定位 */
+	border-radius: 30px;
+	margin-bottom: -160px;
+}
+
+.ask h3
+{
+	color: white;
+	font-weight: bold;
+}
+
+.ask p
+{
+	color: white;
+}
+
+.ask button
+{
+	text-align: center;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+/* ---last--- */
+#last
+{
+	margin-top: 80px;
+	padding: 100px;
+	background-color: #efefef;
+	color: #013f7e;
+	font-weight: bold;
+}
+
+.last-logo
+{
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+#last h1
+{
+	font-size: 15px;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+#last p
+{
+	font-size: 12px;
+	text-align: left;
+
+}
+
+#last .fa
+{
+	padding-right: 20px;
+	font-size: 15px;
+	text-decoration:none; /* 隱藏超連結底線 */
+	color: #013f7e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

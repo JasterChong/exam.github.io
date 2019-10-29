@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 		<title>CYCUTKD</title>
 		<!------main css------>
-		<link rel="stylesheet" type="text/css" href="css/ts2.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!------google fonts字體------>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
-		<!---get bootstrap HTML、CSS及JS等的內容的框架--->
+		<!---get bootstrap HTML、CSS及JS等的內容的框架(Bootstrap插件)--->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -18,29 +18,31 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
+
 	<body>
 		
 		<!---------header-------->
 		<section id="header">
 			<nav class="navbar navbar-light">
-				<a class="logo" href="#"><img src="imga/logo789.png"></a>
+				<a class="logo" href="index.html"><img src="imga/logo789.png"></a>
 				<button class="nav-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
 				<!---icons一些圖案去這裡找https://fontawesome.com/v4.7.0/icons/--->
 				<i class="fa fa-bars"></i>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html" target="_blank">首頁</a>
+							<a class="nav-link" href="index.html" target="">首頁</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="main.html" target="_blank">幹部介紹</a>
+							<a class="nav-link" href="main.html" target="">幹部介紹</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="ex.html" target="_blank">組員介紹</a>
+							<a class="nav-link" href="group.html" target="">組員介紹</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" target="_blank">影片介紹</a>
+							<a class="nav-link" href="viedeohtml.html" target="">小組影片</a>
 						</li>
 					</ul>
 				</div>
@@ -56,7 +58,7 @@
 				如果你有夢想，想運動，想鍛煉身體，想要女朋友,想成為高手，想展現自我跆拳道是您最好的選擇!!!<br>
 			心动不如行动，行动成就梦想！歡迎加入我們的大家庭。</p>
 			<!---下面是申請按鈕--->
-			<button type="submit" class="btn btn-light" title="快速申請" >立即加入</button><!---submit送出表單，class Bootstrap框架的功能的打法如果忘記了再去google--->
+			<button type="submit" class="btn btn-light" title="快速申請" onclick="location.href='form.html'"  >立即加入</button><!---submit送出表單，class Bootstrap框架的功能的打法如果忘記了再去google--->
 		</div>
 	</div>
 </Section>
@@ -107,6 +109,7 @@
 <!---跆拳道來源--->
 <Section id="about">
 	<div class="container">
+		<!---container用法http://cythilya.blogspot.com/2015/04/bootstrap-grid-system.html--->
 		<div class="row"> <!---屬性的功能是用來合併多個列--->
 			<div class="col-md-6 text-center"> 
 				<!---col-md-6忘記了可以去這裡https://medium.com/@realdennis/40行實作響應式的佈局系統-告訴你col-sm-12-col-md-6-是如何實現-4490a65b1a0--->
@@ -274,7 +277,7 @@
 			</div>
 
 			<div class="col-md-4">
-				<p class="comment">這次的網頁設計讓我學到很多的東西，也通過在其他的網頁學習到不同的HTML ，CSS以及JS等等，讓我成功的自己寫出多個網頁。<br>
+				<p class="comment">這次的網頁設計讓我學到很多的東西,也通過在其他的網頁學習到不同的HTML ,CSS以及JS等等,讓我成功的自己寫出多個網頁。<br>
 
 					<a class="fa fa-instagram" href="https://www.instagram.com/jaster_31/" target="_blank"><span>jaster_31</span></a>
 
@@ -292,23 +295,88 @@
 			<h3>歡迎來詢問!</h3>
 			<p>對跆拳道社有興趣的，不明白的地方歡迎來問我們哦~~</p>
 
-			<form action="mailto:zhengzheczz@gmail.com" method="post" enctype="text/plain" >
+			<form action="mailto:zhengzheczz@gmail.com" method="post" enctype="text/plain">
 			
-    			<input type="email" class="form-control" placeholder="Email Id"><br>	
+    			<input type="email" class="form-control" name="Email" placeholder="Email ID"><br>	
 
-    			<textarea class="form-control" name="Content" rows="3" placeholder="問題"></textarea><br>
+    			<textarea class="form-control" name="Content" rows="3" placeholder="姓名,問題"></textarea><br>
 
  				<button type="submit" value="發送">發送</button>
 
 		   </form>
 		 </div>
 	</div>
-
-
 </Section>
 
+<!---last--->
+<section id="last">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="imga/logo789.png" class="last-logo">
+				<p>歡迎來到跆拳道社大家庭</p>
+			</div>
 
+			<div class="col-md-3">
+				<h1>特征</h1>
+				<p>專業教練</p>
+				<p>免費咨詢</p>
+				<p>有助於身體健康</p>
+				<p>學長姐很熱情</p>
+			</div>
 
+			<div class="col-md-3">
+				<h1>聯繫方式</h1>
+				<p><i class="fa fa-phone-square"></i> +886 0986 898 270</p>
+				<p><i class="fa fa-envelope"></i> cycu.tkdclub@gmail.com</p>
+				<p><i class="fa fa-home"></i>中原大學 體育館2F (跆拳道教室)</p>
+			</div>
+
+			<div class="col-md-3">
+				<h1>關注我們</h1>
+
+				<a class="fa fa-facebook-official" href="https://www.facebook.com/cycutkd/" target="_blank"><span>Facebook</span></a><br>
+
+				<a class="fa fa-instagram" href="https://www.instagram.com/cycu.tkd" target="_blank"><span>Instagram</span></a><br>
+
+				<a class="fa fa-youtube-play" href="https://www.youtube.com/channel/UC8_9S-3jzhA34ZGaxlndr5Q" target="_blank"><span>Youtube</span></a>
+
+			</div>
+
+		</div>
+	</div>
+</section>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

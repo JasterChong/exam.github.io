@@ -9,14 +9,6 @@
       padding:10%;*/
     }
 
-    header
-    {
-     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(1.jpg);
-  height: 80vh;
-  background-size: cover; /* 保持图像本身的宽高比例，将图片缩放到正好完全覆盖定义背景的区域 */
-  background-position: center; 
-  z-index:1;/* 位子在中間 */
-    }
 
     .swiper-container 
     {
@@ -101,7 +93,7 @@ padding-left:-10%;
 
   #header
 {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(1.jpg);
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imga/p.jpg");
   height: 50vh;
   background-size: cover; /* 保持图像本身的宽高比例，将图片缩放到正好完全覆盖定义背景的区域 */
   background-position: center; /* 位子在中間 */
@@ -152,12 +144,14 @@ nav .fa-bars/* 設置按鈕顏色，以及大小 */
 .welcome h1
 {
   color: #696969;
-  font-family: 'Ma Shan Zheng', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: bold;
 }
 
 .welcome p
 {
   font-family: 'Noto Sans TC', sans-serif;
+  font-size: 19px;
 }
 
 .welcome .btn-light
